@@ -1,0 +1,198 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Cor de fundo desejada */
+}
+
+
+/* Estilo para a seção de depoimentos */
+#depoimentos {
+    padding: 20px; /* Adicione o preenchimento desejado */
+    background-color: #f9f9f9; /* Cor de fundo desejada */
+    margin-top: 40px; /* Ajuste conforme necessário */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os depoimentos horizontalmente */
+    gap: 100px; /* Espaçamento entre os depoimentos */
+    position: relative; /* Para posicionar o título em cima das imagens */
+    padding-top: 130px; /* Adicione espaço acima dos depoimentos */
+}
+
+/* Estilo para cada depoimento */
+.depoimento {
+    position: relative; /* Para posicionar o título em cima da imagem */
+    width: 200px; /* Largura desejada para cada depoimento */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda os limites do contêiner */
+    border: 2px solid #352626; /* Adiciona um contorno em volta da imagem */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a cor do contorno */
+}
+
+.depoimento img {
+    width: 100%; /* Preenche todo o espaço disponível */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Estilo para o título "Depoimentos" */
+#depoimentos h2 {
+    position: absolute; /* Posiciona o título de forma absoluta */
+    top: -10px; /* Posiciona o título acima dos depoimentos */
+    left: 50%; /* Alinha o título ao centro horizontalmente */
+    transform: translateX(-50%); /* Move o título de volta metade de sua própria largura */
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo com transparência */
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+/* Estilo para a seção Sobre Nós */
+#sobre {
+    background-color: #fdfcfc; /* Cor de fundo desejada para a seção Sobre Nós */
+    padding: 20px; /* Adicione o preenchimento desejado */
+    margin-top: 30px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para a seção Contato */
+#contato {
+    background-color: #eaeaea; /* Cor de fundo desejada para a seção Contato */
+    padding: 20px; /* Adicione o preenchimento desejado */
+}
+
+
+/* Estilo para o contêiner dos cursos */
+.cursos-container {
+    display: flex; /* Mostra os cursos lado a lado */
+    flex-wrap: wrap; /* Permite que os cursos quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: space-between; /* Distribui o espaço horizontalmente entre os cursos */
+}
+
+/* Estilos para os cursos */
+.curso {
+    flex-basis: calc(33.33% - 20px); /* Define a largura dos cursos para que eles ocupem cerca de um terço do contêiner */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra para adicionar profundidade */
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave à sombra */
+}
+
+/* Estilo para a imagem do curso */
+.curso img {
+    max-width: 890%;
+    height: auto;
+}
+
+/* Estilo para a imagem da logo dos cursos */
+.curso img.logo-curso {
+    width: 90px; /* Largura desejada da imagem da logo */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+
+/* Estilo para o título do curso */
+.curso h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para o preço do curso */
+.curso .preco {
+    font-weight: bold;
+}
+
+/* Estilo para o botão de compra */
+.curso .botao-comprar {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover para o botão de compra */
+.curso .botao-comprar:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff;
+    padding: 20px;
+    height: 100px; /* Altura do cabeçalho */
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para adicionar profundidade */
+}
+
+/* Estilos para a logo */
+#logo {
+    width: 300px; /* Largura desejada da logo */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    position: absolute;
+    top: 100px; /* Posiciona a logo no centro verticalmente */
+    left: 50%; /* Posiciona a logo no centro horizontalmente */
+    transform: translate(-50%, -50%); /* Move a logo de volta metade de sua própria largura e altura */
+}
+
+
+/* Estilo para o menu de navegação */
+nav {
+    position: absolute; /* Posicionamento absoluto */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+}
+
+nav ul {
+    list-style-type: none; /* Remove a marcação de lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de menu em linha */
+    margin-right: 20px; /* Espaçamento entre os itens de menu */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+}   
